@@ -1,0 +1,46 @@
+|--- recent_count <= 3.50
+|   |--- recent_count <= 2.50
+|   |   |--- recency <= 13.50
+|   |   |   |--- recent_count <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- recent_count >  1.50
+|   |   |   |   |--- class: 1
+|   |   |--- recency >  13.50
+|   |   |   |--- recency <= 52.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- recency >  52.50
+|   |   |   |   |--- class: 1
+|   |--- recent_count >  2.50
+|   |   |--- recency <= 2.50
+|   |   |   |--- recency <= 1.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  1.50
+|   |   |   |   |--- class: 0
+|   |   |--- recency >  2.50
+|   |   |   |--- recency <= 5.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- recency >  5.50
+|   |   |   |   |--- class: 1
+|--- recent_count >  3.50
+|   |--- recent_count <= 5.50
+|   |   |--- recent_count <= 4.50
+|   |   |   |--- recency <= 3.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  3.50
+|   |   |   |   |--- class: 0
+|   |   |--- recent_count >  4.50
+|   |   |   |--- recency <= 4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  4.50
+|   |   |   |   |--- class: 0
+|   |--- recent_count >  5.50
+|   |   |--- recent_count <= 7.50
+|   |   |   |--- recency <= 4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  4.50
+|   |   |   |   |--- class: 0
+|   |   |--- recent_count >  7.50
+|   |   |   |--- recency <= 4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- recency >  4.50
+|   |   |   |   |--- class: 0

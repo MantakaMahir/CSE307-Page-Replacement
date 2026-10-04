@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-04T07:52:23.597473+00:00",
+  "python": "3.13.1",
+  "libraries": {
+    "scikit-learn": "1.8.0",
+    "psutil": "7.2.2",
+    "reportlab": "4.4.1",
+    "Pillow": "11.2.1"
+  },
+  "simulation": {
+    "training_seeds": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "evaluation_seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "training_samples": 19002,
+    "training_labels": {
+      "0": 8950,
+      "1": 10052
+    },
+    "horizon": 12,
+    "window": 32,
+    "frames": [
+      4,
+      6,
+      8
+    ],
+    "references": 2400,
+    "shift": 1200
+  },
+  "windows": {
+    "platform": "win32",
+    "cpu_model": "AMD64 Family 25 Model 116 Stepping 1, AuthenticAMD",
+    "logical_cpus": 16,
+    "allowed_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "total_ram_mib": 15556.86328125,
+    "repeats": 3,
+    "memory_allocation_mib": 48,
+    "memory_passes": 8,
+    "page_stride": 4096,
+    "cpu_work": "two workers; each performs 12000 SHA-256 operations on 64 KiB",
+    "measurement": "child fault delta excludes allocation; wall time includes child startup; RSS sampled after each pass"
+  }
+}
